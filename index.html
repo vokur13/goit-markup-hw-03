@@ -9,110 +9,133 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Сначала нормализатор -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <!-- Потом пользовательсткие стили -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="nav">
-        <!--Навигация на другие страницы-->
-        <a class="studio-logo link" href="./index.html"
-          ><span class="web-effect">Web</span>Studio</a
-        >
+      <div class="container">
+        <nav class="nav">
+          <!--Навигация на другие страницы-->
+          <a class="studio-logo link" href="./index.html"
+            ><span class="web-effect">Web</span>Studio</a
+          >
+          <ul class="list">
+            <li><a class="studio-nav link current" href="./index.html">Студия</a></li>
+            <li><a class="studio-nav link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="studio-nav link" href="">Контакты</a></li>
+          </ul>
+        </nav>
         <ul class="list">
-          <li><a class="studio-nav link current" href="./index.html">Студия</a></li>
-          <li><a class="studio-nav link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="studio-nav link" href="">Контакты</a></li>
+          <li>
+            <a class="studio-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li><a class="studio-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="studio-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li><a class="studio-contacts link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <main>
       <!--Уникальный контент страницы-->
       <section class="principal-section">
-        <!--Рекламный баннер и афиша (блок-герой)-->
-        <h1 class="principal-section-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="order-button" type="button">Заказать услугу</button>
+        <div class="container">
+          <!--Рекламный баннер и афиша (блок-герой)-->
+          <h1 class="principal-section-title">
+            Эффективные решения <br />
+            для вашего бизнеса <br />
+          </h1>
+          <button class="order-button" type="button">Заказать услугу</button>
+        </div>
       </section>
-      <section class="section">
-        <h2 class="section-title visually-hidden">Наши преимущества</h2>
-        <!--Наши преимущества, скрытый заголовок-->
-        <ul class="features list">
-          <li>
-            <h3 class="title">Внимание к деталям</h3>
-            <p class="features-p-style">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Пунктуальность</h3>
-            <p class="features-p-style">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Планирование</h3>
-            <p class="features-p-style">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="title">Современные технологии</h3>
-            <p class="features-p-style">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+
+      <section class="section features">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Наши преимущества</h2>
+          <!--Наши преимущества, скрытый заголовок-->
+          <ul class="features list">
+            <li>
+              <h3 class="title">Внимание к деталям</h3>
+              <p class="features-p-style">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Пунктуальность</h3>
+              <p class="features-p-style">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Планирование</h3>
+              <p class="features-p-style">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">Современные технологии</h3>
+              <p class="features-p-style">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="section">
-        <h2 class="section-title">Чем мы занимаемся</h2>
-        <!--Чем мы занимаемся-->
-        <ul class="list">
-          <li>
-            <img src="images/examples/img1.jpg" alt="Picture 1" width="370" />
-          </li>
-          <li>
-            <img src="images/examples/img2.jpg" alt="Picture 2" width="370" />
-          </li>
-          <li>
-            <img src="images/examples/img3.jpg" alt="Picture 3" width="370" />
-          </li>
-        </ul>
+
+      <section class="section profile">
+        <div class="container">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <!--Чем мы занимаемся-->
+          <ul class="list">
+            <li>
+              <img src="images/examples/img1.jpg" alt="Picture 1" width="370" />
+            </li>
+            <li>
+              <img src="images/examples/img2.jpg" alt="Picture 2" width="370" />
+            </li>
+            <li>
+              <img src="images/examples/img3.jpg" alt="Picture 3" width="370" />
+            </li>
+          </ul>
+        </div>
       </section>
+
       <section class="section team">
-        <h2 class="section-title">Наша команда</h2>
-        <!--Наша команда-->
-        <ul class="team list">
-          <li>
-            <img src="images/staff/staff1.jpg" alt="Product Designer" width="270" />
-            <h3 class="title">Игорь Демьяненко</h3>
-            <p class="team-unit">Product Designer</p>
-          </li>
-          <li>
-            <img src="images/staff/staff2.jpg" alt="Frontend Developer" width="270" />
-            <h3 class="title">Ольга Репина</h3>
-            <p class="team-unit">Frontend Developer</p>
-          </li>
-          <li>
-            <img src="images/staff/staff3.jpg" alt="Marketing" width="270" />
-            <h3 class="title">Николай Тарасов</h3>
-            <p class="team-unit">Marketing</p>
-          </li>
-          <li>
-            <img src="images/staff/staff4.jpg" alt="UI Designer" width="270" />
-            <h3 class="title">Михаил Ермаков</h3>
-            <p class="team-unit">UI Designer</p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+          <!--Наша команда-->
+          <ul class="team list">
+            <li>
+              <img src="images/staff/staff1.jpg" alt="Product Designer" width="270" />
+              <h3 class="title">Игорь Демьяненко</h3>
+              <p class="team-unit">Product Designer</p>
+            </li>
+            <li>
+              <img src="images/staff/staff2.jpg" alt="Frontend Developer" width="270" />
+              <h3 class="title">Ольга Репина</h3>
+              <p class="team-unit">Frontend Developer</p>
+            </li>
+            <li>
+              <img src="images/staff/staff3.jpg" alt="Marketing" width="270" />
+              <h3 class="title">Николай Тарасов</h3>
+              <p class="team-unit">Marketing</p>
+            </li>
+            <li>
+              <img src="images/staff/staff4.jpg" alt="UI Designer" width="270" />
+              <h3 class="title">Михаил Ермаков</h3>
+              <p class="team-unit">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
+
       <!--<section> - Задание # 4
         <h2>Постоянные клиенты</h2>
         <ul>
