@@ -243,7 +243,7 @@ address {
 }
 /* Геометрия и позиционирование элементов */
 .container {
-  /* outline: 1px solid tomato; */
+  outline: 1px solid tomato;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -256,7 +256,30 @@ address {
 }
 .title {
   padding: 0;
-  margin: 0%;
+  margin: 0;
+}
+#header.container {
+  display: flex;
+  align-items: center;
+}
+.nav .list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav .list > .item:not(:last-child) {
+  margin-right: 50px;
+}
+.studio-nav.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.list.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.list.contacts > .item + .item {
+  margin-left: 50px;
 }
 .section-title {
   padding: 0;
@@ -342,12 +365,28 @@ address {
 #filter.container {
   margin-bottom: 34px;
 }
+.projects-filter.list {
+  display: flex;
+  justify-content: center;
+}
+.filter-button {
+  padding-left: 22px;
+  padding-right: 22px;
+}
 .project-card.link {
   display: inline-block;
   width: 370px;
   height: 400px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border: 1px solid var(--minor-bgc);
+}
+.projects.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#portfolio img {
+  display: block;
 }
 #portfolio {
   padding-bottom: 0px;
