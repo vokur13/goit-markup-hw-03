@@ -4,6 +4,7 @@
 /* Цвет адрессных ссылок: #FFFFFF99 */
 /* Основной цвет фона: #FFFFFF */
 /* Цвет фона вторичный: #F5F4FA */
+/* Минорный цвет фона: #EEEEEE */
 /* Белый: rgba(255, 255, 255, 1) */
 /* Цвет фона Footer #2F303A */
 
@@ -14,6 +15,7 @@
   --addres-links-color: #ffffff99;
   --basic-backgroud-color: #ffffff;
   --background-color: #f5f4fa;
+  --minor-bgc: #eeeeee;
   --footer-bgc: #2f303a;
   --white-color: #fff;
   --black-color: #212121;
@@ -241,7 +243,7 @@ address {
 }
 /* Геометрия и позиционирование элементов */
 .container {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -312,6 +314,19 @@ address {
 }
 .section.team .container {
 }
+.section.team .section-title {
+  margin-bottom: 50px;
+}
+.team.list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.team.list li {
+  display: inline-block;
+  width: 270px;
+  height: 368px;
+  text-align: center;
+}
 .subscribe-btn {
   border: 1px solid transparent;
   min-width: 200px;
@@ -319,4 +334,28 @@ address {
   border-radius: 4px;
   padding: 10px 28px;
   text-align: center;
+}
+.portfolio {
+  padding-top: 115px;
+  padding-bottom: 94px;
+}
+#filter.container {
+  margin-bottom: 34px;
+}
+.project-card.link {
+  display: inline-block;
+  width: 370px;
+  height: 400px;
+  margin-bottom: 20px;
+  border: 1px solid var(--minor-bgc);
+}
+#portfolio {
+  padding-bottom: 0px;
+}
+#portfolio .title {
+  display: inline-block;
+  margin: 20px 24px 4px 24px;
+}
+#portfolio .project-unit {
+  margin: 0px 24px;
 }
