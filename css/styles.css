@@ -158,6 +158,14 @@ address {
   line-height: 1.18;
   color: var(--title-text-color);
 }
+.team.list > .item {
+  background: var(--basic-backgroud-color);
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-unit {
   font-size: 16px;
   line-height: 1.18;
@@ -172,6 +180,17 @@ address {
 }
 .footer .studio-logo {
   color: var(--white-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+.footer .container {
+  height: 252px;
+}
+.footer-address {
+  width: 231px;
+  height: 81px;
+  margin-bottom: 60px;
 }
 .footer .studio-address:hover,
 .footer .studio-contacts:hover,
@@ -179,7 +198,6 @@ address {
 .footer .studio-contacts:focus {
   color: var(--accent-color);
 }
-
 .footer {
   background-color: var(--footer-bgc);
 }
@@ -243,7 +261,7 @@ address {
 }
 /* Геометрия и позиционирование элементов */
 .container {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -320,8 +338,7 @@ address {
   justify-content: space-between;
 }
 .features.list > .item {
-  background-color: tomato;
-  width: 270px;
+  width: calc((100% - 90px) / 4);
 }
 .section.features .container.upper {
   margin-bottom: 94px;
@@ -329,13 +346,24 @@ address {
 .container.lower .section-title {
   text-align: center;
 }
+#tools .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#tools .list .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+#tools .list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
 .section.team .section-title {
   text-align: center;
 }
 .features.list .title {
   margin-bottom: 10px;
-}
-.section.profile .container {
 }
 .profile .section-title {
   margin-bottom: 50px;
@@ -344,8 +372,6 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.team .container {
-}
 .section.team .section-title {
   margin-bottom: 50px;
 }
@@ -353,11 +379,24 @@ address {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.team.list li {
+.team.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team.list > .item {
   display: inline-block;
-  width: 270px;
-  height: 368px;
   text-align: center;
+  width: calc((100% - 90px) / 4);
+  height: 368px;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+.team.list > .item:nth-child(4n) {
+  margin-right: 0;
+}
+.clients.list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .subscribe-btn {
   border: 1px solid transparent;
@@ -378,6 +417,12 @@ address {
   display: flex;
   justify-content: center;
 }
+.projects-filter.list > .item {
+  margin-right: 8px;
+}
+.projects-filter.list > .item:nth-child(5) {
+  margin-right: 0;
+}
 .filter-button {
   padding-left: 22px;
   padding-right: 22px;
@@ -388,13 +433,10 @@ address {
 .projects.list {
   display: flex;
   flex-wrap: wrap;
-  background-color: tomato;
-  /* margin: -15px; */
 }
 .projects.list > .item {
-  /* width: 370px; */
   width: calc((100% - 60px) / 3);
-  /* height: 400px; */
+  height: 400px;
   border: 1px solid var(--minor-bgc);
   margin-right: 30px;
   margin-bottom: 30px;
