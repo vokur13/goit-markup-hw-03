@@ -206,15 +206,13 @@ address {
   color: var(--white-color);
   display: inline-block;
   margin-bottom: 20px;
-  margin-top: 60px;
 }
 .footer .container {
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer-address {
-  width: 231px;
-  height: 81px;
-  margin-bottom: 60px;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .footer .studio-address:hover,
 .footer .studio-contacts:hover,
