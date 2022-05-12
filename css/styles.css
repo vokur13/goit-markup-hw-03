@@ -389,16 +389,16 @@ address {
 .profile .section-title {
   margin-bottom: 50px;
 }
-.section.team {
+.section.team > .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .section.team .section-title {
   margin-bottom: 50px;
 }
-.team.list .title {
-  margin-top: 30px;
-  margin-bottom: 10px;
+.team .card-label {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team.list {
   display: flex;
@@ -414,12 +414,12 @@ address {
 .team.list > .item:nth-child(4n) {
   margin-right: 0;
 }
+.team .title {
+  margin-bottom: 10px;
+}
 .clients.list {
   display: flex;
   flex-wrap: wrap;
-}
-.team.list .team-unit {
-  margin-bottom: 30px;
 }
 .subscribe-btn {
   border: 1px solid transparent;
