@@ -438,7 +438,6 @@ address {
   padding-bottom: 0px;
 }
 .projects.list {
-  outline: 1px solid tomato;
   display: flex;
   flex-wrap: wrap;
 
