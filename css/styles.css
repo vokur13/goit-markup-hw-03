@@ -21,6 +21,8 @@
   --white-color: #fff;
   --black-color: #212121;
   --header-border-color: #ececec;
+  --item-gap: 30px;
+  --item-border-size: 1px;
 }
 /* html {
   box-sizing: border-box;
@@ -441,15 +443,15 @@ address {
   display: flex;
   flex-wrap: wrap;
 
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-right: calc(-1 * var(--item-gap));
+  margin-bottom: calc(-1 * var(--item-gap));
 }
 .projects.list > .item {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - var(--item-gap));
   /* width: calc((100% - 60px) / 3); */
   border: 1px solid var(--minor-bgc);
-  margin-right: 28px;
-  margin-bottom: 28px;
+  margin-right: calc(var(--item-gap) - 2 * var(--item-border-size));
+  margin-bottom: calc(var(--item-gap) - 2 * var(--item-border-size));
 }
 /* .projects.list > .item:nth-child(3n) {
   margin-right: 0;
