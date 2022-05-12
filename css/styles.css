@@ -7,6 +7,7 @@
 /* Минорный цвет фона: #EEEEEE */
 /* Белый: rgba(255, 255, 255, 1) */
 /* Цвет фона Footer #2F303A */
+/* Цвет рамки хедера #ECECEC */
 
 :root {
   --primary-text-color: #757575;
@@ -19,6 +20,7 @@
   --footer-bgc: #2f303a;
   --white-color: #fff;
   --black-color: #212121;
+  --header-border-color: #ececec;
 }
 /* html {
   box-sizing: border-box;
@@ -45,6 +47,9 @@ address {
 }
 .link {
   text-decoration: none;
+}
+.brd {
+  border-bottom: 1px solid var(--header-border-color); /* Параметры границы */
 }
 /* Логотип */
 .studio-logo {
