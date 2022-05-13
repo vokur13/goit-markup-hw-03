@@ -26,6 +26,9 @@
   --item-border-size: 1px;
   --card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  --team-list-item-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --team-item-n-row: 4;
 }
 /* html {
   box-sizing: border-box;
@@ -184,11 +187,6 @@ address {
 }
 .team.list > .item {
   background: var(--basic-backgroud-color);
-  /* material shadow v1 */
-
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-unit {
   font-size: 16px;
@@ -403,16 +401,21 @@ address {
 .team.list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+
+  margin-right: calc(-1 * var(--item-gap));
+  margin-bottom: calc(-1 * var(--item-gap));
 }
 .team.list > .item {
-  display: inline-block;
+  box-shadow: var(--team-list-item-shadow);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
   text-align: center;
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-  margin-bottom: 0;
-}
-.team.list > .item:nth-child(4n) {
-  margin-right: 0;
+
+  flex-basis: calc(100% / var(--team-item-n-row) - (var(--team-item-n-row)-1));
+
+  margin-right: var(--item-gap);
+  margin-bottom: var(--item-gap);
 }
 .team .title {
   margin-bottom: 10px;
@@ -468,27 +471,11 @@ address {
   margin-right: var(--item-gap);
   margin-bottom: var(--item-gap);
 }
-/* .projects.list > .item:nth-child(3n) {
-  margin-right: 0;
-} */
-/* Или */
-/* .projects.list > .item:not(:nth-child(3n)) {
-  margin-right: 30px;
-} */
-/* .projects.list > .item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-} */
-/* Или */
-/* .projects.list > .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-} */
-/* .item-card {
-  box-shadow: var(--card-shadow);
-  border-radius: 4px;
-  overflow: hidden;
-} */
 .item-card .title {
   margin-bottom: 4px;
+}
+.projects.list .item-card {
+  overflow: hidden;
 }
 .card-label {
   padding: 20px 24px;
