@@ -243,6 +243,7 @@ address {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-bottom: 4px;
 }
 .projects .project-unit {
   font-size: 16px;
@@ -261,6 +262,8 @@ address {
   text-align: center;
   color: var(--title-text-color);
   cursor: pointer;
+
+  padding: 5px 22px;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -428,14 +431,13 @@ address {
 .projects-filter.list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .filter-item {
   margin-right: 8px;
-  /* padding: 5px 22px; */
 }
-.filter-button {
-  padding: 5px 22px;
+.filter-item:last-of-type {
+  margin-right: 0px;
 }
 .projects-filter.list > .item:nth-child(5) {
   margin-right: 0;
