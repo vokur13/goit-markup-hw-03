@@ -148,7 +148,6 @@ address {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: ;
   color: var(--title-text-color);
 }
 .section-title.visually-hidden,
@@ -191,7 +190,6 @@ address {
 .team-unit {
   font-size: 16px;
   line-height: 1.18;
-  text-align: ;
 }
 /* Footer */
 .footer .studio-contacts {
