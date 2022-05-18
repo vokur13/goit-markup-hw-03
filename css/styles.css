@@ -440,10 +440,6 @@ address {
 .projects-filter.list > .item:nth-child(5) {
   margin-right: 0;
 }
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .projects.list {
   display: flex;
   flex-wrap: wrap;
